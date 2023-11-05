@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RM Alumínio</title>
-    <link rel="stylesheet" href="style.css">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-  
       <nav>
         <ul class="listateste">
-          <div><img id="logo" src="assets/rm.png" alt="">
-            </div>
-          <li>Nossos projetos</li>
-          <li>Contate-nos</li>
-          <li>Sobre nós</li>
-          <li>Solicite seu orçamento</li>
+          <div><img id="logo" src="assets/rm.png" alt="" /></div>
+          <li><a href="#nossosProjetos">Nossos projetos</a></li>
+          <li><a href="#sobreNos">Sobre nós</a></li>
+          <li><a href="#soliciteOrcamento">Solicite seu orçamento</a></li>
         </ul>
       </nav>
+  
     </header>
     <!-- Introduçao -->
     <div id="divDescricao">
@@ -55,7 +56,7 @@
       </div>
     </div>
     <div class="container">
-      <h2>Sobre nós</h2>
+      <h2 id="sobreNos">Sobre nós</h2>
       <p class="descricao">
         Somos uma empresa referência em esquadrias de alumínio, reconhecida e
         atuante no mercado há 22 anos. Prezamos pela qualidade excelência e para
@@ -66,22 +67,23 @@
     </div>
 
     <div class="container">
-      <h2>Orçamento de Serralheria</h2>
-      <form>
+      <h2 id="soliciteOrcamento">Orçamento de Serralheria</h2>
+      <form id="form">
         <label class="descricao" for="nome">Nome:</label><br />
-        <input type="text" id="nome" name="nome" /><br />
+        <input class="campo-arredondado" type="text" id="nome" name="nome" /><br />
 
         <label class="descricao" for="email">E-mail:</label><br />
-        <input type="email" id="email" name="email" /><br />
+        <input class="campo-arredondado" type="email" id="email" name="email" /><br />
 
         <label class="descricao" for="telefone">Telefone:</label><br />
-        <input type="tel" id="telefone" name="telefone" /><br />
+        <input class="campo-arredondado" type="tel" id="telefone" name="telefone" /><br />
 
         <label class="descricao" for="mensagem">Mensagem:</label><br />
-        <textarea id="mensagem" name="mensagem"></textarea><br />
+        <textarea class="campo-arredondado" id="mensagem" name="mensagem"></textarea><br />
 
         <input id="botaoEnviar" type="submit" value="Enviar" />
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
